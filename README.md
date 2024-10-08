@@ -16,21 +16,21 @@ Este programa deve ser capaz de cadastrar as informações de aplicação de vac
     - Data (pode ser tratada como String) \
     - Numero Lote \
 
-Logo após o cadastro o programa deverá disponibilizar outros dois recursos, um deles é um relatório geral de aplicação, que trará todas as informações das aplicações em tela no seguinte modelo:
-    Código: 0
-    Nome: Rogerio Napoleao Júnior
-    CPF: 111.111.111-11
-    Vacina: Pfizer
-    Data: 01/05/2022
-    Numero do Lote: 123123123
-    ==================================
-    Código: 1
-    Nome: Joao da Silva
-    CPF: 111.111.111-11
-    Vacina: Coronavac
-    Data: 10/05/2022
-    Numero do Lote: 333222333
-    ==================================
+Logo após o cadastro o programa deverá disponibilizar outros dois recursos, um deles é um relatório geral de aplicação, que trará todas as informações das aplicações em tela no seguinte modelo: \
+    Código: 0 \
+    Nome: Rogerio Napoleao Júnior \
+    CPF: 111.111.111-11 \
+    Vacina: Pfizer \
+    Data: 01/05/2022 \
+    Numero do Lote: 123123123 \
+    ================================== \
+    Código: 1 \
+    Nome: Joao da Silva \
+    CPF: 111.111.111-11 \
+    Vacina: Coronavac \
+    Data: 10/05/2022 \
+    Numero do Lote: 333222333 \
+    ================================== \
 
 O outro recurso necessário é busca por CPF, ao usuário digitar o CPF o programa deve fazer uma buscar e mostrar em tela apenas o CPF consultado, caso não exista uma informação “CPF não encontrado” deve ser mostrado na tela.
 
