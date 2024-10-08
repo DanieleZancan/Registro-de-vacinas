@@ -34,7 +34,7 @@ Logo após o cadastro o programa deverá disponibilizar outros dois recursos, um
 
 O outro recurso necessário é busca por CPF, ao usuário digitar o CPF o programa deve fazer uma buscar e mostrar em tela apenas o CPF consultado, caso não exista uma informação “CPF não encontrado” deve ser mostrado na tela.
 
-Para controlar este programa deverá ter um menu de opções como abaixo: 
+Para controlar este programa deverá ter um menu de opções como abaixo: \
     1 - Cadastrar Vacina \
     2 - Listar Aplicações \
     3 - Consultar por CPF \
