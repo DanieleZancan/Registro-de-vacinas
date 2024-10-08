@@ -1,18 +1,19 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 struct vacina {
     char nome[40];
-    unsigned long int cpf;
+    char cpf[12]; 
     char vacina[20];
-    char data[8];
+    char data[11];
     int lote;
     int codigo;
 };
 
 int main() {
     struct vacina controle[5];
-    unsigned long int buscacpf;
+    char buscacpf[12];  
     int i, leitura, cadastro, cpfvalido;
 
     leitura = 0;
@@ -28,7 +29,7 @@ int main() {
 
         if (leitura == 1) {
             system("cls");
-            printf("Quantos cadastros deseja realizar?\n");
+            printf("Quantos cadastros deseja realizar? \n");
             scanf("%d", &cadastro);
             getchar();
 
@@ -36,8 +37,8 @@ int main() {
                 printf("Digite seu nome: \n");
                 scanf("%s", controle[i].nome);
 
-                printf("Digite seu CPF: \n");
-                scanf("%lu", &controle[i].cpf);
+                printf("Digite seu CPF (apenas numeros): \n");
+                scanf("%s", controle[i].cpf);
 
                 printf("Digite qual a vacina tomada: \n");
                 scanf("%s", controle[i].vacina);
@@ -51,25 +52,25 @@ int main() {
                 controle[i].codigo = i + 1;
             }
         } else if (leitura == 2) {
-            system("cls"); 
+            system("cls");
             for (i = 0; i < cadastro; i++) {
                 printf("Codigo da Vacina: %d \n", controle[i].codigo);
                 printf("Nome: %s \n", controle[i].nome);
-                printf("CPF: %lu \n", controle[i].cpf);
+                printf("CPF: %s \n", controle[i].cpf);
                 printf("Vacina tomada: %s \n", controle[i].vacina);
                 printf("Data de Vacinacao: %s \n", controle[i].data);
                 printf("Lote da vacina: %d \n\n", controle[i].lote);
             }
         } else if (leitura == 3) {
             system("cls");
-            printf("Consulta por CPF \n");
-            scanf("%lu", &buscacpf);
+            printf("Digite o CPF para consulta (apenas numeros): \n");
+            scanf("%s", buscacpf);
             getchar();
 
             i = 0;
             cpfvalido = 0;
             while (i < cadastro && cpfvalido == 0) {
-                if (controle[i].cpf == buscacpf) {
+                if (strcmp(controle[i].cpf, buscacpf) == 0) {
                     cpfvalido = 1;
                 } else {
                     i++;
@@ -86,5 +87,6 @@ int main() {
             }
         }
     }
+
     return 0;
 }
