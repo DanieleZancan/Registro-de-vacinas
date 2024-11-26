@@ -1,7 +1,5 @@
 # Registro De Vacinas
 
-Atividade MAPA da matéria Algortimos e Lógica de Programação do curso de Graduação de Engenharia de Software (finalizado na data de 08/07/2022)
-
 Criação de um programa na linguagem C para registro e consulta de pessoas vacinadas contra a Covid-19, seguindo os seguintes critérios e instruções:
 
 A vacinação contra o Covid-19 evoluiu muito no ano de 2021. Para 2022 ao que tudo indica doses de reforço serão necessárias para controle da pandemia. Com a ajuda da tecnologia, o controle de vacinas são todas digitalizadas, inclusive a partir de um aplicativo você mesmo pode consultar as vacinas que você tomou.
